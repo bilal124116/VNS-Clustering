@@ -6,7 +6,7 @@ setdbprefs('NullStringRead', 'null');
 
 %Make connection to database.  Note that the password has been omitted.
 %Using ODBC driver.
-conn = database('MSSQLSERVER', 'sa', 'YourPassword');
+conn = database('MSSQLSERVER', 'UserName', 'YourPassword');
 
 %Read data from database.
 curs = exec(conn, ['SELECT 	MesureFEMTO.id'...
